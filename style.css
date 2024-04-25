@@ -25,6 +25,11 @@ a{
     color: var(--cor-de-link);
 }
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
 /*Neste desafio, gostariamos que praticassem a metodologia BEM, caso seintam a vontade 
 de utiliza-la. 
 
@@ -38,29 +43,207 @@ de usuário complexa, e permite a reutilização de código existente sem copiar
 Link da documentação oficial!
 https://en.bem.info/methodology/quick-start/*/
 
-/*Sessão Menu*/
 
-section.menu{
+/*Sessão de Menu*/
 
+section.menu {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-around;
+    height: 70px;
+
+}
+
+.menu__list {
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.menu__list__item__contato {
+    font-weight: bold;
+    height: 15px;
+    margin-left: 25px;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+    align-items: center;
+    width: 150px;
+}
+
+.icon{
+    width: 24px;
+    height: 24px;
+}
+
+.menu__title{
+    font-size: 16px;
+}
+
+.menu__list__item{
+    white-space: nowrap;
 }
 
 /*Sessão Title*/
 
 section.title{
-
+    display: flex;
+    justify-content: center;
+    height: 550px;
 }
 
+.title__div{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+}
+
+.title__bio{
+    font-size: 52px;
+    font-weight: bold;
+    color: #474747;
+}
+
+.title__subsection {
+    font-size: 22px;
+    color: #454545;
+}
+
+.title__network{
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+    padding: 0;
+}
+
+.title__network__item a{
+    font-size: 16px;
+    color:#474747;
+}
+
+.title__container{
+    display: flex;
+    flex-direction: column;
+    align-items: last baseline;
+    gap: 25px;
+}
+
+.title__bio{
+    width: 80%;
+}
+
+.title__subsection{
+    width: 70%;
+}
 /*Sessão About*/
 
 section.about{
+    display: flex;
+    justify-content: center;
+    height: 400px;
+    background-color: #EAF2FD;
+}
 
+.about__title{
+    font-size: 32px;
+    color: #474747;
+}
+
+.about__container{
+    display: flex;
+    flex-direction: column;
+    align-items: first baseline;
+    align-self: center;
+    width: 57%;
+    height: 50%;
+    gap:16px;
+}
+
+/*Sessão Skils*/
+
+section.skills{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.skills__line{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.skills__title{
+    display: flex;
+    align-items: center;
+    height: 100px;
+    font-size: 32px;
+    color: #474747;
+}
+
+.skills__box{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 176px;
+    height: 174px;
+    border-radius: 10px;
+    background-color: #ffff;
+}
+
+.skills__name{
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
 }
 
 /*Sessão Hobbies*/
 
 section.hobbies{
-    
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
+
+.hobbies__line{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.hobbies__title{
+    display: flex;
+    align-items: center;
+    height: 150px;
+    font-size: 32px;
+    color: #474747;
+}
+
+.hobbies__box{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 176px;
+    height: 174px;
+    border-radius: 10px;
+    background-color: #ffff;
+}
+
+.hobbies__name{
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
 
 /* Experiência Acadêmica*/
 
