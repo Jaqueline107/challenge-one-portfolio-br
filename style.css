@@ -248,25 +248,229 @@ section.hobbies{
 /* Experiência Acadêmica*/
 
 section.academic{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
 
+.academic__courses{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.academic__title{
+    display: flex;
+    align-items: center;
+    height: 150px;
+    font-size: 32px;
+    color: #474747;
+}
+
+.academic__courses__box{
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    width: 176px;
+    height: 174px;
+    border-radius: 10px;
+    background-color: #ffff;
+}
+
+.academic__courses__item__title{
+    font-size: 17px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.academic__courses__list{
+    display: flex;
+    flex-direction: column;
+}
+
+.academic__courses__item__img{
+    display: flex;
+    justify-content: center;
+
+
+    > img {
+        width: 157px;
+        height: 75px;
+        border-radius: 15px;
+    }
 }
 
 /* experiência*/
 
 section.experience{
-
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
+
+.experiencie__box{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.experience__section__title{
+    display: flex;
+    align-items: center;
+    height: 150px;
+    font-size: 32px;
+    color: #474747;
+}
+
+.experience__grid{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.experiencie__box{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    width: 550px;
+    height: 320px;
+    border-radius: 10px;
+    background-color: #ffff;
+    margin-bottom: 10px;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px 1px #cccccc;
+
+    &:hover {
+        box-shadow: 5px 5px 5px 2px #cccccc;
+    }
+}
+
+.experience__img{
+    width: 400px;
+    border-radius: 5px;
+}
+
+.experience__title{
+    font-size: 14px;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+.experience__text{
+    font-size: 17px;
+    font-weight: 700;
+}
+
+.experience__description{
+    margin-top: 7px;
+    margin-bottom: 8px;
+}
+
+.experiencia__botao--repo{
+    color: #ffff;
+    font-weight: 500;
+    background-color: #1477c2;
+    padding: 7px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px 1px #5c5c5f;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.experiencia__botao--ver-mais{
+    color: #28272e;
+    background-color: #ffffff;
+    padding: 7px;
+    border: none;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px 1px #5c5c5f;
+    border-radius: 5px;
+}
+
 
 /*Contato*/
 
 section.formcontato{
+    
+}
 
+.formcontato__text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.formcontato__form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    gap: 7px;
+
+    width: 370px;
+    height: 430px;
+
+    background-color: #EAF2FD;
+    box-shadow: 3px 1px 1px 1px #5c5c5f;
+    border-radius: 7px;
+}
+
+.formcontato__title{
+    color: #007ab9;
+    font-weight: bold;
+}
+
+.formcontato__subtext{
+    color: #2a3131;
+    font-size: 19px;
+    margin-bottom: 5px;
+}
+
+.formcontato__input{
+    width: 250px;
+    padding: 7px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px 1px 1px #5c5c5f;
+}
+
+.formcontato__textarea{
+    width: 250px;
+    height: 120px;
+    padding: 7px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 1px 1px 1px 1px #5c5c5f;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.formcontato__botao{
+    width: 200px;
+    height: 45px;
+    padding: 10px;
+    color: #ffff;
+    font-weight: 500;
+    background-color: #1477c2;
+    border: none;
+    cursor: pointer;
+    box-shadow: 1px 1px 1px 1px #5c5c5f;
+    border-radius: 5px;
 }
 
 /*footeer*/
 
 section.footer{
-   
+    margin-top: 20px;
+}
+
+.footer__rodape{
+    display: flex;
+    flex-direction: row;
+
+    >p {margin: 5px;}
 }
 
 /* Chegou a hora de se desafiar com a responsividade, 
